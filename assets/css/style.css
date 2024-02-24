@@ -1,0 +1,9 @@
+
+#image, #section, #infoContainer {
+    text-align: center;
+}
+
+#image img {
+    max-width: 100%; /* Ajusta el ancho máximo de la imagen */
+    height: auto;    /* Permite que la altura se ajuste proporcionalmente al ancho */
+}
