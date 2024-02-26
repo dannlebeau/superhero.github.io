@@ -5,12 +5,15 @@ $(document).ready(function () {
         // Capturar la información ingresada
         const heroId = $("#heroName").val();
 
-        // Validar que la información sea un número
-        if (!isNaN(heroId)) {
+        // Validar que la información estre dentro del rango
+        if (!isNaN(heroId) && heroId >= 1 && heroId <= 731) {
+
+
             // Consultar la API
             consultarSuperheroe(heroId);
         } else {
-            alert("Por favor, ingresa un número válido.");
+            //aca se muestra el mensaje de advertencia
+            alert("Error. Por favor, ingresa un número válido entre 1 y 731.");
         }
     });
 
